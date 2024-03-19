@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Practical1</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {yello;
+}
+h1 {
+    background-color: white;
+	margin-center:50px
+}
+h2 {
+    background-color: gray;
+	margin-center:50px
+}
+dt {
+    background-color: red;
+	margin-center:50px
+}
+</style>
+</head>
+<body>
+
+    <header>
+	  <h1>HTML practical work</h1>
+      <h2>Mohseni meibodi ava</h2>
+    </header>
+
+<section>
+ <nav>
+    <ul>
+      <li><a href="#q1">Question1</a></li>
+	  <li><a href="#q2">Question2</a></li>
+	  <li><a href="#q3">Question3</a></li>
+	  <li><a href="#q4">Question4</a></li>
+	  <li><a href="#q5">Question5</a></li>
+	  <li><a href="#q6">Question6</a></li>
+
+
+
+    </ul>
+  </nav>
+
+<main>
+ <dl>
+<dt id="q1">1. When HTML5 has become a standard? What were the main reasons for developing new standard?</dt>
+<dd>HTML5 became a standard in October 20141.
+The main reasons for developing this new standard were to:
+Modernize and enhance the language to meet the evolving needs of web development.
+Improve consistency across different browsers by defining clear rules.
+Support multimedia (audio, video, and canvas) natively within the browser.
+Enhance accessibility by introducing semantic elements.
+Simplify development by providing more concise and expressive markup.</dd>
+<dt id="q2">2.What is a difference between W3C HTML5 and WHATWG HTML Living Standard?</dt>
+<dd>Difference Between W3C HTML5 and WHATWG HTML Living Standard:
+W3C HTML5:
+Follows a version-based approach (e.g., HTML5).
+Provides stable snapshots of the specification.
+Includes features that are backward-compatible with previous versions.
+WHATWG HTML Living Standard:
+Is a living document without version numbers.
+Evolves continuously, with no fixed release cycles.
+Focuses on practical implementation and rapid development.
+Includes features that are forward-looking, even if not yet widely supported.</dd>
+<dt id="q3">3.What is the minimal HTML page code?</dt>
+<dd>The minimal HTML page code consists of the basic structure required to create a valid HTML document. It typically includes the following elements:
+
+!DOCTYPE html
+html
+head
+    titlePage Title/title
+/head
+body
+    h1Hello, World!/h1
+/body
+/html
+
+
+Let's break down each part of the minimal HTML page code:
+
+1. !DOCTYPE html: This declaration defines the document type and version of HTML being used. In this case, it specifies that the document is an HTML5 document.
+
+2. html: The html element is the root element of an HTML page and contains all other HTML elements.
+
+3. head: The head element contains metadata about the HTML document, such as the title of the page, links to external resources (CSS, JavaScript), and other information that is not directly displayed on the page.
+
+4. title: The title element sets the title of the HTML document, which is displayed in the browser tab or window title bar.
+
+5. body: The body element contains the content of the HTML document that will be displayed in the browser window. This is where you would include headings, paragraphs, images, links, and other elements that make up the visible content of the page.
+
+6. h1: The h1 element is a heading element that defines the main heading or title of the page. In this example, it displays "Hello, World!" as the main heading.
+
+This minimal HTML page code provides a simple structure for creating a basic web page. You can build on this foundation by adding more content, styling with CSS, and enhancing functionality with JavaScript to create more complex and interactive web pages</dd>
+<dt id="q4">4.Comment on semantic and presentational markup. Why presentational markup is considered deprecated now?</dt>
+<dd>Semantic markup refers to using HTML elements that convey meaning and structure to the content of a web page. These elements are descriptive and help search engines, screen readers, and other tools understand the content and context of the page. Examples of semantic elements include header, nav, main, article, section, aside, footer, h1 to h6, p, ul, ol, li, etc.
+
+On the other hand, presentational markup involves using HTML elements primarily for styling or visual presentation purposes. This includes elements like font, b, i, center, and inline styles like style="color: red;". Presentational markup focuses on how the content looks rather than what it means.
+
+Presentational markup is considered deprecated now because it mixes content with presentation, making the code harder to maintain, less accessible, and less adaptable to different devices and screen sizes. It also hinders search engine optimization and semantic understanding of the content.
+
+By using semantic markup, web developers can separate content from presentation, making the code more readable, maintainable, and accessible. Semantic HTML helps improve SEO, enhances usability for screen readers and assistive technologies, and provides a solid foundation for responsive design.
+
+In modern web development, it is recommended to avoid presentational markup and instead use semantic HTML along with CSS for styling to create well-structured, accessible, and future-proof websites.</dd>
+<dt id="q5">5.How you can check browser support for particular tag or attribute?</dt>
+<dd>TTo check browser support for a particular HTML tag or attribute, you can use various online resources and tools. Here are a few methods you can use:
+
+Can I Use: Can I Use is a popular website that provides detailed information on browser support for various web technologies, including HTML tags and attributes. Simply visit the Can I Use website, enter the tag or attribute you want to check, and it will display a table showing the browser support for that feature.
+
+MDN Web Docs: MDN Web Docs is a comprehensive resource for web developers, and it provides detailed documentation on HTML, CSS, and JavaScript. You can search for the specific tag or attribute on the MDN website, and it will provide information on browser compatibility, including which browsers support the feature and any known issues or limitations.
+
+Feature Detection: Another approach is to use JavaScript to detect the availability of a specific feature in the user's browser. You can use JavaScript libraries like Modernizr or write custom code to check if a particular tag or attribute is supported by the browser. This method allows you to perform conditional checks and provide fallback options if the feature is not supported.</dd>
+<dt id="q6">6.What are the audio and video formats, officially supported by HTML standard? What happens if you use other format?</dt>
+<dd>The HTML standard officially supports the following audio and video formats:
+
+Audio Formats:
+- MP3
+- Ogg Vorbis
+- WAV
+
+Video Formats:
+- MP4
+- WebM
+- Ogg Theora
+
+If you use other formats that are not officially supported by the HTML standard, the browser may not be able to play the audio or video content correctly. In such cases, the browser may not recognize the file format and may not be able to decode and render the media content. This can result in the audio or video not playing at all or playing with errors, such as missing audio or video tracks, distorted playback, or no playback at all.
+
+It is important to use the recommended audio and video formats supported by the HTML standard to ensure cross-browser compatibility and a consistent user experience. You can provide fallback options for different formats using the source element within the audio and video tags to ensure that the media content can be played in browsers that support different formats.</dd> 
+</dl>
+</main>
+</section>
+
+<footer>
+    <p>
+	
+            <img src="https://sb.bsu.by/Data/person/Институт%20бизнеса%20бгу_92е30ар239.png" alt="SB BSU logo image" style="float:right;width:300px;height:60;">
+          This was a hard task for me in general but the site W3schools really helped me to overcome the task:) i hope i can get better in the future with practice
+</footer>
+
+<html> 
+<body> 
+
+<video width="400" controls>
+  <source src="mov_bbb.mp4" type="video/mp4">
+  <source src="mov_bbb.ogg" type="video/ogg">
+  Your browser does not support HTML video.
+</video>
+
+<p>
+Video courtesy of 
+<a href="https://www.youtube.com/watch?v=salY_Sm6mv4&pp=ygUSaHRtbDUgaW50cm9kdWN0aW9u" target="_blank">HTML in 5 minutes!</a>.
+</p>
+
+</body> 
+</html>
+
+
+
+
