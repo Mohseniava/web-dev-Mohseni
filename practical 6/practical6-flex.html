@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Artisan Leather Goods</title>
+  <style>
+    /* Reset some default styles */
+    body, h1, h2, h3, p, ul {
+      margin: 0;
+      padding: 0;
+    }
+
+    /* Flexbox Styles */
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    .hero {
+      flex: 1 1 100%;
+      background-color: brown;
+      padding: 40px;
+      text-align: center;
+      text-decoration-color: beige;
+      
+    }
+
+    .product-grid {
+      flex: 2 1 60%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+
+    .product-preview {
+      flex: 1 1 45%;
+      background-color: #fff;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      margin-bottom: 20px;
+    }
+
+    .sidebar {
+      flex: 1 1 30%;
+      background-color: #f5f5f5;
+      padding: 20px;
+    }
+
+    /* Responsive Styles */
+    @media (max-width: 768px) {
+      .product-preview {
+        flex: 1 1 100%;
+      }
+      .sidebar {
+        order: 3;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="hero">
+      <h1>Artisan Leather Goods</h1>
+      <p>Crafting Timeless Elegance</p>
+    </div>
+    <div class="product-grid">
+      <div class="product-preview">
+        <img src="Elegant - Elegant Black 2.jpeg" alt="Top News Leather Briefcase">
+        <h2>Top News Leather Briefcase</h2>
+        <p>Inspired by the top news section in the code, this premium leather briefcase is a statement piece for the modern professional. Crafted from full-grain leather, it features a spacious interior, multiple compartments, and a padded laptop sleeve. The sleek design and attention to detail make it a perfect blend of style and functionality.</p>
+        <button>Shop Now</button>
+      </div>
+      <div class="product-preview">
+        <img src="Leather tote bag, tote bags for women, custom tote bags, designer tote bags, large leather tote bag, 2.jpeg" alt="News Preview Leather Tote">
+        <h3>News Preview Leather Tote</h3>
+        <p>Taking cues from the news preview elements, this versatile tote bag is designed for everyday carry. Made from supple leather, it features a spacious interior, an interior zip pocket, and a detachable strap for added convenience. The minimalist design and impeccable craftsmanship make it a timeless accessory.</p>
+        <button>Buy Now</button>
+      </div>
+      <div class="product-preview">
+        <img src="… 2.jpeg" alt="News Preview Leather Messenger Bag">
+        <h3>News Preview Leather Messenger Bag</h3>
+        <p>Inspired by the news preview section, this leather messenger bag combines functionality with style. Crafted from premium full-grain leather, it features a spacious main compartment, multiple pockets for organization, and an adjustable shoulder strap. Perfect for daily commutes or weekend getaways.</p>
+        <button>Buy Now</button>
+      </div>
+      <div class="product-preview">
+        <img src="Marrakesh Travel Bag Leather Duffel, Tobacco.jpeg" alt="News Preview Leather Travel Duffle">
+        <h3>News Preview Leather Travel Duffle</h3>
+        <p>Designed for the modern adventurer, this leather travel duffle is both stylish and durable. Made from top-quality leather, it features a spacious interior, multiple pockets, and reinforced straps for comfortable carrying. Whether for a weekend getaway or an extended journey, this duffle will be your trusted companion.</p>
+        <button>Buy Now</button>
+      </div>
+    </div>
+    <div class="sidebar">
+      <h3>Sidebar Leather Wallet</h3>
+      <p>Inspired by the sidebar navigation, this leather wallet is a must-have for those who appreciate functional elegance. Crafted from premium leather, it features multiple card slots, a dedicated cash compartment, and a coin pocket. The sleek design and durable construction ensure it will be a loyal companion for years to come.</p>
+      <button>Buy Now</button>
+      <h3>About Artisan Leather Goods</h3>
+      <p>Artisan Leather Goods is a brand that celebrates the art of traditional leatherworking, combining exceptional quality with contemporary design. Founded in 2012, we are dedicated to creating timeless and exquisite pieces that blend luxury with craftsmanship. Each product is meticulously handcrafted by our skilled artisans, using only the finest full-grain leathers sourced from the world's most reputable tanneries.</p>
+    </div>
+  </div>
+</body>
+</html>
