@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>JavaScript Calculator</title>
+  <script>
+   // this is a single line comment
+
+// Function to perform arithmetic operations
+function calculate(num1, operator, num2) {
+  // Switch statement to handle different operators
+  switch(operator) {
+    // Case for addition
+    case '+':
+      return num1 + num2;
+    // Case for subtraction
+    case '-':
+      return num1 - num2;
+    // Case for multiplication
+    case '*':
+      return num1 * num2;
+    // Case for division
+    case '/':
+      // Check if the second number is not zero
+      if(num2 != 0) {
+        // Perform division if the second number is not zero
+        return num1 / num2;
+      } else {
+        // Alert the user if trying to divide by zero
+        alert("Error: Division by zero is not allowed.");
+        // Return NaN (Not a Number) for invalid result
+        return NaN;
+      }
+    // Default case for invalid operator
+    default:
+      // Alert the user for invalid operator
+      alert("Error: Invalid operator.");
+      // Return NaN for invalid result
+      return NaN;
+  }
+}
+
+do {
+  // Prompt the user for the first number and convert it to a float
+  var num1 = parseFloat(prompt("Enter the first number:"));
+  // Prompt the user for the operator
+  var operator = prompt("Enter an operator (+, -, *, /):");
+  // Prompt the user for the second number and convert it to a float
+  var num2 = parseFloat(prompt("Enter the second number:"));
+  // Call the calculate function with the user inputs
+  var result = calculate(num1, operator, num2);
+  // Check if the result is a valid number
+  if(!isNaN(result)) {
+    // Alert the user with the result
+    alert("The result is: " + result);
+  }
+  // Prompt the user if they want to perform another calculation
+  var repeat = prompt("Do you want to perform another calculation? (yes/no)");
+  // Repeat the loop if the user enters 'yes' (case-insensitive)
+} while(repeat.toLowerCase() === 'yes');
+  </script>
+</head>
+<body>
+</body>
+</html>
